@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_alphabet - print alphabet of letters
@@ -6,15 +6,14 @@
  * Return: void
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char ch = 'a';
+	int i;
 
-	while(ch <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
+
 	{
-		printf("%c ", ch);
-		ch++;
+		_putchar(i);
 	}
-
-	return (0);
+	_putchar('\n');
 }
